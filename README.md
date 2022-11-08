@@ -20,9 +20,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Deploy to Heroku
-        uses: behe/heroku-build@v1.1
+        uses: joshHighland/heroku-build@v1.1
         with:
           app-name: "your-app-name-on-heroku"
           api-key: "${{secrets.HEROKU_API_KEY}}"
